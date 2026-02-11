@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.2rem;
+}
+button, input[type=submit], input[type=button] {
+    background: transparent;
+    border: 0;
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px 20px; /* Ensure consistent padding */
+    border-radius: 4px;
+}
+button:hover, input[type=submit]:hover, input[type=button]:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.header-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addnewstudent {
+    text-align: left;
+}
+.addnewstudent input {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.addnewstudent input:hover {
+    background-color: #45a049;
+}
+.logout-header {
+    text-align: right;
+    white-space: nowrap; /* Ensure buttons don't wrap to the next line */
+    display: flex;
+    align-items: center;
+}
+.logout-header span {
+    margin-right: 10px; /* Ensure space between text and buttons */
+}
+.logout-header input {
+    margin: 0 5px; /* Add space between buttons */
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap; /* Ensure buttons don't wrap to the next line */
+}
+#gobackbtn {
+    background-color: #808080;
+    color: black;
+}
+#gobackbtn:hover {
+    background-color: #008000;
+    color: gold;
+}
+#logoutbtn {
+    background-color: #f44336;
+    color: white;
+}
+#logoutbtn:hover {
+    background-color: #d32f2f;
+}
+.filter-container {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.filter-container select, .filter-container input[type="text"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #008000;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+.icon-buttons {
+    display: flex;
+    gap: 10px;
+}
+.icon-button-form {
+    display: inline;
+}
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.filter-container {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.filter-container select, .filter-container input[type="text"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    width: 200px; /* Fixed width */
+    max-width: 100%; /* Ensures it doesn't overflow */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}

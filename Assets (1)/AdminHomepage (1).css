@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 100vh;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #004d1a;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.user-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+.logout-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.menu-item {
+    background-color: #f4f4f4;
+    border: 2px solid #004d1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.menu-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.menu-item:hover {
+    background-color: #004d1a;
+    color: gold;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.menu-item:hover i {
+    color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Logout Modal */
+#logoutModal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
